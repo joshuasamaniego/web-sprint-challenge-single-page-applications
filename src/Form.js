@@ -2,17 +2,12 @@ import React from 'react'
 
 function Form(props) {
     const { values, submit, change, disabled, errors } = props;
-
-    const onSubmit = (evt) => {
-        evt.preventDefault();
-        submit();
-      };
     
-      const onChange = (evt) => {
+    const onChange = (evt) => {
         const { name, value, type, checked } = evt.target;
         const valueToUSe = type === "checkbox" ? checked : value;
         change(name, valueToUSe);
-      };
+    };
 
     return (
         <div>
@@ -25,6 +20,7 @@ function Form(props) {
                                 name="name"
                                 value={values.name}
                                 onChange={onChange}
+                                className="text__box"
                             />
                         </label>
                     </div>
@@ -217,6 +213,7 @@ function Form(props) {
                                 name="special"
                                 value={values.special}
                                 onChange={onChange}
+                                className="text__box"
                             />
                         </label>
                     </div>

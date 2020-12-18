@@ -106,8 +106,8 @@ const App = () => {
       <nav className="nav__bar">
         <h1 className='store__header'>Lambda Eats</h1>
         <div className='nav__links'>
-          <Link to="/">Home</Link>
-          <Link to="/pizza">Order Now</Link>
+          <Link className="link" to="/">Home</Link>
+          <Link className="link" to="/pizza">Order Now</Link>
         </div>
       </nav>
       <Switch>

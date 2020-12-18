@@ -13,10 +13,22 @@
   color: white;
 }
 .store__header {
-  margin: 2%;
+  margin: 2% 2% 0% 2%;
+  padding: 1%;
+  font-size: 2rem;
 }
 .nav__links {
-  margin: 2%;
+  margin: 2% 2% 0% 2%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.link {
+  text-decoration: none;
+  color: red;
+  padding: 1%;
+  font-size: 1.6rem;
 }
 .home__wrapper {
   display: flex;
@@ -25,7 +37,7 @@
 }
 .home__image {
   width: 95%;
-  margin: 2.5%;
+  margin: 2% 2.5% 0% 2.5%;
   box-shadow: 0px 1px 6px 2px red;
 }
 .order__button {
@@ -35,4 +47,5 @@
   color: white;
   background-color: red;
   font-size: 2rem;
+  cursor: pointer;
 }
